@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+    background-color: #B4A8AA;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+    text-align: center
+}
+
+.box div { 
+    width: 55px; 
+    display: inline-block; 
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header-svg {
+    width: 30px;
+}
+
+.nickname1 {
+    font-size: 16px;
+}
+
+.desc {
+    font-family: 'Comfortaa', cursive;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 27px;
+	color: #394C60;
+}
+
+.svg-skills {
+    width: 34px;
+    height: 34px;
+}
+
+#toTop {
+	position: fixed;
+	display: inline-block;
+	bottom: 30px;
+	right: -40px;
+	width: 40px;
+	height: 40px;
+	z-index: 1000;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background: green;
+	box-shadow: 0 0 0 3px rgba(0,0,0,.2);
+	opacity: 0;
+	visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+#toTop:hover {
+		background: darkgreen;
+}
+
+#toTop svg {
+	position: relative;
+	top: 12px;
+	right: -1px;
+	fill: #fff;
+	transition: all .3s ease-in-out;
+}
+
+#toTop:hover svg {
+	cursor: pointer;
+	fill: #fff;
+	transition: all .3s ease-in-out;
+}
+
+#toTop.show {
+	opacity: 1;
+	visibility: visible;
+	right: calc(2%);
+}

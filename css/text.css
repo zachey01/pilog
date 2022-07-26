@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .nickname {
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 29ch;
+    color: black;
+    font-family: monospace;
+    font-size: 30px;
+    overflow: hidden; /* скрываем переполнение контентом */
+    white-space: nowrap; /* не переносить текст на другую строку */
+    border-right: 3px solid black; /* рисуем курсор */
+    animation: cursor 0.75s step-end infinite, printed_text 5s steps(29);
+  }
+  
+  @keyframes cursor {
+    0% {
+      border-color: #B4A8AA;
+    }
+  
+    50% {
+      border-color: transparent;
+    }
+  
+    100% {
+      border-color: rgb(95, 95, 95);
+    }
+  }
+  
+  @keyframes printed_text {
+    from {
+      width: 0;
+    }
+  }
+  
