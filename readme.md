@@ -1,4 +1,4 @@
-# Minimal personal website
+# Pilog - minimal personal website
 
 Итак, перейдем к настройке, первым делом вам нужно изменить информацию на вашу, когда вы уже все сменили. Можно приступать к сжатию html-файлов, в этом помогает сервис [Involta](https://involta.ru/tools/validator-html/)
 
